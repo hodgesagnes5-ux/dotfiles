@@ -1,0 +1,34 @@
+" .ideavimrc for JetBrains IDEs with IdeaVim plugin
+" These mappings mirror Vim and provide convenient navigation
+" See https://github.com/JetBrains/ideavim for details
+
+" Leader key
+let mapleader=","  " comma leader
+
+" Basic mappings
+inoremap jj <Esc>
+nnoremap <leader>w :w<CR>
+nnoremap <leader>q :q<CR>
+
+" Window navigation to match IDE shortcuts where suitable
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+" Use leader + b to switch buffers in IDEVim quickly
+nnoremap <leader>b :b#<CR>
+
+" Useful toggles
+nnoremap <leader>s :action FindInPath<CR>
+nnoremap <leader>f :action ReformatCode<CR>
+
+" Ideavim supports action mapping (map to IDE-specific actions)
+" Example: map :action Vcs.UpdateProject to update from VCS
+" Map common IDEA actions to easier keys (optional)
+" nnoremap <leader>gs :action Vcs.UpdateProject<CR>
+
+" Keep cursorline / number behaviors consistent if IDE supports them
+" IdeaVim doesn't control all IDE UI aspects; rely on IDE settings for visuals
+
+" End of .ideavimrc

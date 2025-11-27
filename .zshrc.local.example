@@ -1,0 +1,16 @@
+# Example local overrides loaded by .zshrc
+# Put machine specific environment variables or overrides here
+
+# Example: set a custom PATH
+# export PATH="$HOME/.local/bin:$PATH"
+
+# Example: set your default editor
+export EDITOR=vim
+
+# Example: configure starship if installed
+# eval "$(starship init zsh)"
+
+# Example: enable direnv
+# if command -v direnv >/dev/null 2>&1; then
+#   eval "$(direnv hook zsh)"
+# fi
